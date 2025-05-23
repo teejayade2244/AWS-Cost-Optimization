@@ -5,7 +5,7 @@ from typing import List, Tuple, Dict, Any
 
 # Configuration
 REGION = 'eu-west-2'
-SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:123456789012:underutilized-resources'
+SNS_TOPIC_ARN = 'arn:aws:sns:eu-west-2:911167885172:cost-optimizer-alerts'
 EC2_CPU_THRESHOLD = 10    
 CPU_LOOKBACK_DAYS = 7
 EBS_SNAPSHOT_AGE_DAYS = 30
