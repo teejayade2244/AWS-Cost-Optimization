@@ -14,7 +14,7 @@ variable "lambda_function_name" {
 }
 
 variable "schedule_expression" {
-  description = "CloudWatch EventBridge schedule"
+  description = "CloudWatch EventBridge schedule for weekends"
   type        = string
-  default     = "rate(1 minute)"  # Runs every minute
+  default     = "cron(0 0 ? * FRI *)"
 }
