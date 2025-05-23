@@ -13,8 +13,3 @@ variable "lambda_function_name" {
   type        = string
 }
 
-variable "schedule_expression" {
-  description = "CloudWatch EventBridge schedule"
-  type        = string
-  default     = "cron(0 7 * * ? *)"
-}
